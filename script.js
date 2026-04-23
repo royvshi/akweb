@@ -1,99 +1,99 @@
 const galleryItems = [
   {
-    title: "Corridor Walk",
+    title: "Leadership March",
     category: "leadership",
-    description: "Hero image with movement, architecture, and political gravitas.",
+    description: "A defining leadership moment marked by institutional poise and forward movement.",
     image: "assets/images/hero-corridor.jpeg",
     alt: "Abhishek Kaushik walking through a corridor with columns"
   },
   {
-    title: "Formal Chair Portrait",
+    title: "Official Portrait",
     category: "leadership",
-    description: "A composed seated look suited to leadership branding.",
+    description: "An official leadership setting suited to campaign communication and premium public branding.",
     image: "assets/images/leadership-formal-chair.jpeg",
     alt: "Abhishek Kaushik in a formal chair portrait"
   },
   {
-    title: "Black Suit Presence",
+    title: "Commanding Presence",
     category: "leadership",
-    description: "Strong formal styling for premium public-facing visuals.",
+    description: "A confident formal moment that projects command, composure, and political polish.",
     image: "assets/images/leadership-black-suit.jpeg",
     alt: "Abhishek Kaushik in a black suit seated in a formal space"
   },
   {
-    title: "Institutional Frame",
+    title: "Institutional Stature",
     category: "leadership",
-    description: "A wide leadership image with a refined official setting.",
+    description: "A refined official setting that reinforces discipline, stature, and leadership presence.",
     image: "assets/images/leadership-chair-wide.jpeg",
     alt: "Abhishek Kaushik seated in an official room"
   },
   {
-    title: "Centered Authority",
+    title: "Executive Authority",
     category: "leadership",
-    description: "Balanced framing for banners, posters, or public profiles.",
+    description: "A balanced official moment built for posters, profiles, and strong public recall.",
     image: "assets/images/leadership-chair-centered.jpeg",
     alt: "Abhishek Kaushik centered in a formal chair portrait"
   },
   {
-    title: "Public Address",
+    title: "National Address",
     category: "public",
-    description: "The key podium photograph that anchors the authority section.",
+    description: "A signature public-speaking moment that conveys conviction, authority, and message discipline.",
     image: "assets/images/public-speech.jpeg",
     alt: "Abhishek Kaushik speaking at a podium"
   },
   {
     title: "Speech Alternate",
     category: "public",
-    description: "An alternate angle for campaign or event storytelling.",
+    description: "A campaign-ready speaking moment shaped by confidence, reach, and public connection.",
     image: "assets/images/speech-podium-alt.jpeg",
     alt: "Abhishek Kaushik giving a public speech"
   },
   {
     title: "Lok Sabha Presence",
     category: "public",
-    description: "A high-recognition visual for institutional association.",
+    description: "A strong institutional association that elevates recognition, stature, and political presence.",
     image: "assets/images/public-lok-sabha.jpeg",
     alt: "Abhishek Kaushik standing near Lok Sabha signage"
   },
   {
     title: "Office Profile",
     category: "public",
-    description: "Professional desk image reinforcing administrative credibility.",
+    description: "An executive-style professional moment that reinforces credibility, order, and command.",
     image: "assets/images/public-office-desk.jpeg",
     alt: "Abhishek Kaushik seated at an office desk"
   },
   {
     title: "Office Alternate",
     category: "public",
-    description: "Secondary office frame for broader public-life coverage.",
+    description: "A composed administrative setting suited to official communication and public-facing credibility.",
     image: "assets/images/office-desk-alt.jpeg",
     alt: "Abhishek Kaushik at an office desk with decorative wall art"
   },
   {
     title: "Shawl Portrait",
     category: "personal",
-    description: "Warm, trustworthy, and ideal for approachable branding.",
+    description: "A dignified personal frame that adds warmth without reducing stature.",
     image: "assets/images/about-shawl-portrait.jpeg",
     alt: "Close-up shawl portrait of Abhishek Kaushik"
   },
   {
     title: "White Kurta",
     category: "personal",
-    description: "Calm and minimal, useful for softer personal positioning.",
+    description: "A composed personal moment that keeps the overall profile rooted and accessible.",
     image: "assets/images/personal-white-kurta.jpeg",
     alt: "Abhishek Kaushik in a white kurta looking at a phone"
   },
   {
     title: "Tea Moment",
     category: "personal",
-    description: "Relatable and human, best kept to gallery use.",
+    description: "A grounded off-stage moment that adds relatability to a polished public image.",
     image: "assets/images/personal-tea.jpeg",
     alt: "Abhishek Kaushik sitting casually with tea"
   },
   {
     title: "Casual Sofa",
     category: "personal",
-    description: "Included for completeness, but intentionally not used as a lead image.",
+    description: "A secondary lifestyle frame kept within the gallery for softer personal context.",
     image: "assets/images/personal-casual-sofa.jpeg",
     alt: "Abhishek Kaushik seated casually on a sofa"
   }

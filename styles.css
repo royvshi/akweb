@@ -1,17 +1,21 @@
 :root {
-  --bg: #f6efe3;
-  --bg-soft: #fff9f1;
-  --surface: rgba(255, 249, 241, 0.84);
-  --surface-strong: rgba(32, 18, 8, 0.86);
-  --text: #1f140d;
-  --text-soft: #5c4637;
-  --line: rgba(104, 69, 37, 0.18);
-  --saffron: #d46b08;
-  --saffron-soft: #f3b15a;
-  --deep: #29150d;
-  --deep-warm: #532819;
+  --bg: #f6f6f1;
+  --bg-soft: #fffdf7;
+  --surface: rgba(255, 255, 255, 0.86);
+  --surface-strong: rgba(17, 36, 74, 0.88);
+  --text: #162033;
+  --text-soft: #4d596d;
+  --line: rgba(17, 36, 74, 0.14);
+  --saffron: #f08a17;
+  --saffron-soft: #f5bb68;
+  --green: #18824b;
+  --green-soft: #74c08d;
+  --navy: #0f2a55;
+  --navy-soft: #3a5f95;
+  --deep: #0d1f3c;
+  --deep-warm: #3a2410;
   --white: #fffdf8;
-  --shadow: 0 22px 70px rgba(49, 24, 7, 0.14);
+  --shadow: 0 22px 70px rgba(15, 42, 85, 0.12);
   --radius-xl: 32px;
   --radius-lg: 24px;
   --radius-md: 18px;
@@ -31,9 +35,9 @@ body {
   font-family: "Segoe UI", "Trebuchet MS", sans-serif;
   color: var(--text);
   background:
-    radial-gradient(circle at top left, rgba(244, 189, 107, 0.26), transparent 28rem),
-    radial-gradient(circle at right center, rgba(125, 63, 15, 0.12), transparent 24rem),
-    linear-gradient(180deg, #f3eadb 0%, #f8f3eb 36%, #f4ede2 100%);
+    radial-gradient(circle at top left, rgba(240, 138, 23, 0.2), transparent 30rem),
+    radial-gradient(circle at bottom right, rgba(24, 130, 75, 0.16), transparent 28rem),
+    linear-gradient(180deg, #fbfaf4 0%, #ffffff 40%, #f2f7f2 100%);
 }
 
 img {
@@ -75,8 +79,18 @@ button {
   top: 0;
   z-index: 50;
   backdrop-filter: blur(18px);
-  background: rgba(246, 239, 227, 0.74);
-  border-bottom: 1px solid rgba(85, 54, 26, 0.08);
+  background: rgba(255, 255, 255, 0.8);
+  border-bottom: 1px solid rgba(15, 42, 85, 0.08);
+}
+
+.site-header::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -1px;
+  height: 3px;
+  background: linear-gradient(90deg, var(--saffron) 0 33%, #f7f7f2 33% 66%, var(--green) 66% 100%);
 }
 
 .navbar {
@@ -99,8 +113,10 @@ button {
   width: 2.8rem;
   height: 2.8rem;
   border-radius: 50%;
-  background: linear-gradient(135deg, var(--saffron), #ffcc75);
-  color: var(--deep);
+  background: linear-gradient(180deg, var(--saffron) 0 32%, #fffdf8 32% 68%, var(--green) 68% 100%);
+  color: var(--navy);
+  border: 2px solid rgba(15, 42, 85, 0.12);
+  box-shadow: inset 0 0 0 2px rgba(255, 255, 255, 0.7);
   font-weight: 800;
   letter-spacing: 0.06em;
 }
@@ -117,7 +133,7 @@ button {
 }
 
 .brand-copy span:last-child {
-  color: var(--text-soft);
+  color: var(--navy-soft);
   font-size: 0.88rem;
 }
 
@@ -136,7 +152,7 @@ button {
 
 .nav-links a:hover,
 .nav-links a:focus-visible {
-  color: var(--saffron);
+  color: var(--green);
 }
 
 .hero {
@@ -162,14 +178,15 @@ button {
 
 .hero-overlay {
   background:
-    linear-gradient(105deg, rgba(18, 12, 8, 0.9) 12%, rgba(18, 12, 8, 0.66) 38%, rgba(18, 12, 8, 0.28) 64%, rgba(18, 12, 8, 0.12) 100%),
-    linear-gradient(180deg, rgba(212, 107, 8, 0.16), rgba(212, 107, 8, 0.04));
+    linear-gradient(105deg, rgba(13, 31, 60, 0.92) 10%, rgba(13, 31, 60, 0.68) 40%, rgba(13, 31, 60, 0.28) 68%, rgba(13, 31, 60, 0.12) 100%),
+    linear-gradient(135deg, rgba(240, 138, 23, 0.2), rgba(24, 130, 75, 0.16));
 }
 
 .hero-glow {
   background:
-    radial-gradient(circle at 20% 78%, rgba(212, 107, 8, 0.34), transparent 18rem),
-    radial-gradient(circle at 82% 20%, rgba(255, 233, 192, 0.18), transparent 18rem);
+    radial-gradient(circle at 18% 78%, rgba(240, 138, 23, 0.34), transparent 18rem),
+    radial-gradient(circle at 84% 18%, rgba(24, 130, 75, 0.2), transparent 18rem),
+    radial-gradient(circle at 76% 52%, rgba(255, 255, 255, 0.08), transparent 14rem);
 }
 
 .hero-content {
@@ -184,7 +201,7 @@ button {
 
 .eyebrow {
   margin: 0;
-  color: var(--saffron-soft);
+  color: var(--saffron);
   text-transform: uppercase;
   letter-spacing: 0.18em;
   font-size: 0.76rem;
@@ -243,14 +260,15 @@ button {
 }
 
 .button-primary {
-  background: linear-gradient(135deg, var(--saffron), #ef9b32);
-  color: var(--deep);
+  background: linear-gradient(135deg, var(--saffron) 0 44%, #fffdf8 44% 58%, var(--green) 58% 100%);
+  color: var(--navy);
+  border-color: rgba(15, 42, 85, 0.14);
   font-weight: 800;
 }
 
 .button-secondary {
-  border-color: rgba(255, 255, 255, 0.34);
-  background: rgba(255, 255, 255, 0.08);
+  border-color: rgba(255, 255, 255, 0.4);
+  background: rgba(15, 42, 85, 0.2);
 }
 
 .hero-highlights {
@@ -263,16 +281,16 @@ button {
 .hero-highlights article {
   padding: 1.2rem;
   border-radius: var(--radius-md);
-  background: rgba(255, 248, 239, 0.1);
+  background: rgba(255, 255, 255, 0.08);
   backdrop-filter: blur(14px);
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.14);
 }
 
 .hero-highlights span,
 .story-tag {
   display: inline-block;
   margin-bottom: 0.7rem;
-  color: var(--saffron-soft);
+  color: var(--green-soft);
   text-transform: uppercase;
   letter-spacing: 0.14em;
   font-size: 0.72rem;
@@ -335,7 +353,19 @@ button {
   width: 16rem;
   height: 16rem;
   border-radius: 50%;
-  background: radial-gradient(circle, rgba(212, 107, 8, 0.18), transparent 68%);
+  background: radial-gradient(circle, rgba(240, 138, 23, 0.16), transparent 68%);
+  pointer-events: none;
+}
+
+.section-about::after,
+.section-social::after {
+  content: "";
+  position: absolute;
+  inset: 12% -8% auto auto;
+  width: 14rem;
+  height: 14rem;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(24, 130, 75, 0.14), transparent 70%);
   pointer-events: none;
 }
 
@@ -352,7 +382,7 @@ button {
 }
 
 .portrait-card {
-  background: linear-gradient(180deg, #fff6e7 0%, #efdebf 100%);
+  background: linear-gradient(135deg, rgba(240, 138, 23, 0.16), rgba(255, 255, 255, 0.96) 44%, rgba(24, 130, 75, 0.16));
   padding: 1rem;
 }
 
@@ -366,8 +396,9 @@ button {
 
 .section-positions {
   background:
-    linear-gradient(180deg, rgba(255, 248, 238, 0.88), rgba(255, 248, 238, 0.62)),
-    radial-gradient(circle at top, rgba(212, 107, 8, 0.08), transparent 24rem);
+    linear-gradient(180deg, rgba(255, 250, 242, 0.9), rgba(255, 255, 255, 0.74), rgba(242, 248, 242, 0.86)),
+    radial-gradient(circle at top, rgba(240, 138, 23, 0.08), transparent 24rem),
+    radial-gradient(circle at bottom, rgba(24, 130, 75, 0.08), transparent 24rem);
 }
 
 .position-grid {
@@ -377,11 +408,23 @@ button {
 }
 
 .position-card {
+  position: relative;
+  overflow: hidden;
   padding: 1.5rem;
-  background: rgba(255, 255, 255, 0.66);
+  background: rgba(255, 255, 255, 0.78);
   border: 1px solid var(--line);
   border-radius: var(--radius-lg);
   backdrop-filter: blur(8px);
+}
+
+.position-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, var(--saffron) 0 33%, #fffdf8 33% 66%, var(--green) 66% 100%);
 }
 
 .icon-shell {
@@ -390,8 +433,8 @@ button {
   width: 3rem;
   height: 3rem;
   border-radius: 50%;
-  background: linear-gradient(135deg, rgba(212, 107, 8, 0.2), rgba(255, 255, 255, 0.95));
-  color: var(--saffron);
+  background: linear-gradient(135deg, rgba(15, 42, 85, 0.16), rgba(255, 255, 255, 0.96));
+  color: var(--navy);
   font-weight: 800;
   margin-bottom: 1rem;
 }
@@ -444,7 +487,7 @@ button {
   content: "";
   position: absolute;
   inset: 0;
-  background: linear-gradient(180deg, rgba(23, 12, 6, 0.02), rgba(23, 12, 6, 0.72));
+  background: linear-gradient(180deg, rgba(15, 42, 85, 0.02), rgba(15, 42, 85, 0.78));
   pointer-events: none;
 }
 
@@ -494,8 +537,8 @@ button {
 }
 
 .filter-button.is-active {
-  background: linear-gradient(135deg, var(--saffron), #ef9b32);
-  color: var(--deep);
+  background: linear-gradient(135deg, var(--saffron) 0 44%, #fffdf8 44% 58%, var(--green) 58% 100%);
+  color: var(--navy);
   border-color: transparent;
   font-weight: 700;
 }
@@ -537,7 +580,7 @@ button {
   position: absolute;
   inset: 0;
   z-index: 1;
-  background: linear-gradient(180deg, rgba(212, 107, 8, 0.05), rgba(212, 107, 8, 0.22));
+  background: linear-gradient(135deg, rgba(240, 138, 23, 0.06), rgba(255, 255, 255, 0.04), rgba(24, 130, 75, 0.18));
   opacity: 0;
   transition: opacity 180ms ease;
 }
@@ -618,8 +661,9 @@ button {
 .contact-cards article {
   padding: 1.2rem 1.3rem;
   border-radius: var(--radius-lg);
-  background: rgba(255, 255, 255, 0.7);
+  background: rgba(255, 255, 255, 0.76);
   border: 1px solid var(--line);
+  border-left: 4px solid var(--green);
 }
 
 .contact-cards span {
@@ -627,6 +671,11 @@ button {
   margin-bottom: 0.4rem;
   color: var(--text-soft);
   font-size: 0.9rem;
+}
+
+.contact-cards strong,
+.contact-cards a {
+  overflow-wrap: anywhere;
 }
 
 .map-card {
